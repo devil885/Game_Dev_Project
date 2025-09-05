@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     Rigidbody2D body;
-    public CharacterScriptableObject characterData;
+    PlayerStats player;
     public InputAction playerControls;
     [HideInInspector]
     public Vector2 moveDirection;
@@ -25,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
+        player = GetComponent<PlayerStats>();
         lastMovedVector = new Vector2(1, 0f);
     }
 
@@ -63,7 +64,7 @@ public class PlayerMovement : MonoBehaviour
     void Move() 
     {
         body.linearVelocity =
-         new Vector2(moveDirection.x * characterData.MoveSpeed, moveDirection.y * characterData.MoveSpeed);
+         new Vector2(moveDirection.x * player.currentMoveSpeed, moveDirection.y * player.currentMoveSpeed);
 
     }
 }

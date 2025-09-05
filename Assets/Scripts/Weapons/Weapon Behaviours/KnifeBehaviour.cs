@@ -10,6 +10,6 @@ public class KnifeBehaviour : ProjectileWeaponBehaviour
 
     void Update()
     {
-        transform.position += direction * weaponData.ProjectileSpeed * Time.deltaTime;
+        transform.position += direction * currentProjectileSpeed * Time.deltaTime;
     }
 }

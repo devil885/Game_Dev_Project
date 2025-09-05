@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d667f385cde678b4593d0a6353206aec, type: 3}
   m_Name: Basic Character
   m_EditorClassIdentifier: 
-  startingWeapon: {fileID: 0}
+  startingWeapon: {fileID: 5951018986090701314, guid: 2ea709e070963ec4da720fdbf534479e, type: 3}
   maxHealth: 1000
-  healthRegen: 0
+  healthRegen: 1
   moveSpeed: 5
   strength: 0
   projectileSpeed: 0
+  pickUpRange: 1.6

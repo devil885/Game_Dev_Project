@@ -180,7 +180,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3b15672bd7b0484f9c8b9aa988efd46, type: 3}
---- !u!1 &90113662
+--- !u!1 &97490771
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -188,22 +188,23 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 90113663}
-  - component: {fileID: 90113664}
+  - component: {fileID: 97490772}
+  - component: {fileID: 97490774}
+  - component: {fileID: 97490773}
   m_Layer: 0
-  m_Name: Knife Controller
+  m_Name: Collector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &90113663
+--- !u!4 &97490772
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 90113662}
+  m_GameObject: {fileID: 97490771}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -212,19 +213,55 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2022804458}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &90113664
+--- !u!114 &97490773
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 90113662}
+  m_GameObject: {fileID: 97490771}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62e0288b03cd1b84d9169900d713c3fe, type: 3}
+  m_Script: {fileID: 11500000, guid: c4a49c7cdf313184da77174d0fce7838, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponData: {fileID: 11400000, guid: 643a21e00aa56304593588bbf36b03a6, type: 2}
+  pullSpeed: 300
+--- !u!58 &97490774
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97490771}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.5
 --- !u!1 &511990525
 GameObject:
   m_ObjectHideFlags: 0
@@ -518,51 +555,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1165165249
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1165165250}
-  - component: {fileID: 1165165251}
-  m_Layer: 0
-  m_Name: Gralic Controller
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1165165250
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1165165249}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2022804458}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1165165251
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1165165249}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 356f924b8973e674382a608d783bb001, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weaponData: {fileID: 11400000, guid: 92dfca536f454854b9f686fc8ecee0db, type: 2}
 --- !u!1 &2022804453
 GameObject:
   m_ObjectHideFlags: 0
@@ -579,7 +571,6 @@ GameObject:
   - component: {fileID: 2022804460}
   - component: {fileID: 2022804459}
   - component: {fileID: 2022804461}
-  - component: {fileID: 2022804462}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -672,7 +663,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f07c2a3a541ecfa419428ab8118228be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterData: {fileID: 11400000, guid: 82fb5a6173753aa4a87c21b3c396c909, type: 2}
   playerControls:
     m_Name: Player Controls
     m_Type: 0
@@ -793,8 +783,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 90113663}
-  - {fileID: 1165165250}
+  - {fileID: 97490772}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &2022804459
@@ -843,7 +832,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 707482da0b5de5b479da3dd45679d539, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterData: {fileID: 11400000, guid: 82fb5a6173753aa4a87c21b3c396c909, type: 2}
+  currentHealth: 0
+  currentHealthRegen: 0
+  currentMoveSpeed: 0
+  currentStrength: 0
+  currentProjectileSpeed: 0
+  currentPickUpRange: 0
+  spawnedWeapons: []
   experience: 0
   level: 1
   experienceCap: 0
@@ -855,18 +850,6 @@ MonoBehaviour:
   - startLevel: 4
     endLevel: 5
     experienceCapIncrease: 200
---- !u!114 &2022804462
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2022804453}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4a49c7cdf313184da77174d0fce7838, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &5801610469289455922
 PrefabInstance:
   m_ObjectHideFlags: 0

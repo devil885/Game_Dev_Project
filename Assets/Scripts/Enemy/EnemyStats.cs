@@ -4,14 +4,14 @@ public class EnemyStats : MonoBehaviour
 {
     public EnemyScriptableObject enemyData;
 
-    float currentHealth;
-    float currentSpeed;
-    float currentDamage;
+    public float currentHealth;
+    public float currentMoveSpeed;
+    public float currentDamage;
 
     void Awake() 
     {
         currentHealth = enemyData.MaxHealth;
-        currentSpeed = enemyData.MoveSpeed;
+        currentMoveSpeed = enemyData.MoveSpeed;
         currentDamage = enemyData.Damage;
     }
 
