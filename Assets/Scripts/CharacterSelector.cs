@@ -33,7 +33,6 @@ public class CharacterSelector : MonoBehaviour
 
     public void DestroySingleton() 
     {
-        Debug.Log("DestroySingleton");
         instance = null;
         Destroy(gameObject);
     }
