@@ -63,18 +63,21 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Map\ChunkTrigger.cs" />
     <Compile Include="Assets\Scripts\Weapons\Weapon Base\WeaponController.cs" />
+    <Compile Include="Assets\Scripts\Weapons\WeaponScriptableObject.cs" />
     <Compile Include="Assets\Scripts\Weapons\Weapon Behaviours\GarlicBehaviour.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Weapons\Weapon Base\ProjectWeaponBehaviour.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyMovement.cs" />
     <Compile Include="Assets\Scripts\Map\Randomizer.cs" />
     <Compile Include="Assets\Scripts\Weapons\Weapon Behaviours\KnifeBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemyStats.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerAnimations.cs" />
     <Compile Include="Assets\Scripts\Weapons\Weapon Base\MeleeWeaponBehaviour.cs" />
     <Compile Include="Assets\Scripts\Player\MainCameraMovement.cs" />
     <Compile Include="Assets\Scripts\Weapons\Weapon Controllers\KnifeController.cs" />
     <Compile Include="Assets\Scripts\Map\MapController.cs" />
     <Compile Include="Assets\Scripts\Weapons\Weapon Controllers\GarlicController.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemyScriptableObject.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -127,6 +127,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5412859649881365022, guid: f3b15672bd7b0484f9c8b9aa988efd46, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2564129859136073728, guid: f3b15672bd7b0484f9c8b9aa988efd46, type: 3}
       propertyPath: m_Name
       value: Bat
@@ -220,11 +224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62e0288b03cd1b84d9169900d713c3fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 7944747659548405743, guid: 9787fc7a179498648ad8067eca97aca0, type: 3}
-  damage: 0
-  projectileSpeed: 10
-  pierce: 0
-  baseCooldown: 2
+  weaponData: {fileID: 11400000, guid: 643a21e00aa56304593588bbf36b03a6, type: 2}
 --- !u!1 &511990525
 GameObject:
   m_ObjectHideFlags: 0
@@ -562,11 +562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 356f924b8973e674382a608d783bb001, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 6470447738664582412, guid: decd78a6c4872ea4185585a67e05797e, type: 3}
-  damage: 0
-  projectileSpeed: 0
-  pierce: 0
-  baseCooldown: 3
+  weaponData: {fileID: 11400000, guid: 92dfca536f454854b9f686fc8ecee0db, type: 2}
 --- !u!1 &2022804453
 GameObject:
   m_ObjectHideFlags: 0
