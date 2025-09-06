@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1209497891753534105
+--- !u!1 &1018583740377331438
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 17029378372073580}
-  - component: {fileID: 8645877798259042560}
+  - component: {fileID: 2866312313589664021}
+  - component: {fileID: 8721914918881489953}
   m_Layer: 0
-  m_Name: Gralic Controller
+  m_Name: Wings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &17029378372073580
+--- !u!4 &2866312313589664021
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1209497891753534105}
+  m_GameObject: {fileID: 1018583740377331438}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -32,16 +32,16 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8645877798259042560
+--- !u!114 &8721914918881489953
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1209497891753534105}
+  m_GameObject: {fileID: 1018583740377331438}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 356f924b8973e674382a608d783bb001, type: 3}
+  m_Script: {fileID: 11500000, guid: 4941545a46eb5c641b58dcf9766d6710, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponData: {fileID: 11400000, guid: 92dfca536f454854b9f686fc8ecee0db, type: 2}
+  passiveItemData: {fileID: 11400000, guid: f9d11d4e1dc01b94db96409374f233c0, type: 2}

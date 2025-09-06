@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Map\ChunkTrigger.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemySpawner.cs" />
+    <Compile Include="Assets\Scripts\PassiveItems\PassiveItem.cs" />
     <Compile Include="Assets\Scripts\Weapons\Weapon Base\WeaponController.cs" />
     <Compile Include="Assets\Scripts\Player\CharacterScriptableObject.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerCollector.cs" />
@@ -70,10 +71,12 @@
     <Compile Include="Assets\Scripts\Weapons\WeaponScriptableObject.cs" />
     <Compile Include="Assets\Scripts\Weapons\Weapon Behaviours\GarlicBehaviour.cs" />
     <Compile Include="Assets\Scripts\Pick-Ups\PickUp.cs" />
+    <Compile Include="Assets\Scripts\PassiveItems\SpinachPassiveItem.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Weapons\Weapon Base\ProjectWeaponBehaviour.cs" />
     <Compile Include="Assets\Scripts\SeceneController.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyMovement.cs" />
+    <Compile Include="Assets\Scripts\Player\InventoryManager.cs" />
     <Compile Include="Assets\Scripts\BreakableProps.cs" />
     <Compile Include="Assets\Scripts\Map\Randomizer.cs" />
     <Compile Include="Assets\Scripts\CharacterSelector.cs" />
@@ -82,8 +85,10 @@
     <Compile Include="Assets\Scripts\Enemy\EnemyStats.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerAnimations.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerStats.cs" />
+    <Compile Include="Assets\Scripts\PassiveItems\PassiveItemScriptableObject.cs" />
     <Compile Include="Assets\Scripts\Interfaces\CollectableInterface.cs" />
     <Compile Include="Assets\Scripts\Weapons\Weapon Base\MeleeWeaponBehaviour.cs" />
+    <Compile Include="Assets\Scripts\PassiveItems\WingsPassiveItem.cs" />
     <Compile Include="Assets\Scripts\Player\MainCameraMovement.cs" />
     <Compile Include="Assets\Scripts\Pick-Ups\ExperienceGem.cs" />
     <Compile Include="Assets\Scripts\Weapons\Weapon Controllers\KnifeController.cs" />

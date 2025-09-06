@@ -9,11 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8024dcc40ff502f43aa682c98a9f9fba, type: 3}
-  m_Name: Garlic Weapon
+  m_Script: {fileID: 11500000, guid: bae6f70251647384cb8f69cc0281173e, type: 3}
+  m_Name: SpinachPassiveItem Level 2
   m_EditorClassIdentifier: 
-  prefab: {fileID: 6470447738664582412, guid: decd78a6c4872ea4185585a67e05797e, type: 3}
-  damage: 5
-  projectileSpeed: 0
-  pierce: 0
-  baseCooldown: 3
+  multiplier: 150
+  level: 2
+  nextLevelPrefab: {fileID: 0}
+  icon: {fileID: 21300000, guid: 78b25fd0997d11c4eaa05d69f519c1b5, type: 3}

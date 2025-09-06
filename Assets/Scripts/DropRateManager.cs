@@ -15,7 +15,11 @@ public class DropRateManager : MonoBehaviour
 
     void OnDestroy() 
     {
-        if (quitting) return;
+        if (!gameObject.scene.isLoaded) 
+        {
+            return;
+        }
+
         float randomNumber = UnityEngine.Random.Range(0f, 100f);
         Drops rarestDrop = null;
         foreach (Drops rate in drops)
@@ -41,10 +45,4 @@ public class DropRateManager : MonoBehaviour
 
     }
 
-    bool quitting = false;
-
-    void OnApplicationQuit()
-    {
-        quitting = true;
-    }
 }

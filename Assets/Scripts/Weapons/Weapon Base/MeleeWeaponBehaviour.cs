@@ -28,16 +28,19 @@ public class MeleeWeaponBehaviour : MonoBehaviour
         if (collider.CompareTag("Enemy"))
         {
             EnemyStats enemy = collider.GetComponent<EnemyStats>();
-            enemy.TakeDamage(currentDamage);
+            enemy.TakeDamage(GetCurrentDamage());
         }
         else if (collider.CompareTag("Prop")) 
         {
             if (collider.gameObject.TryGetComponent(out BreakableProps breakable)) 
             {
-                breakable.TakeDamage(currentDamage);
+                breakable.TakeDamage(GetCurrentDamage());
             }
         }
     }
 
-    
+    public float GetCurrentDamage()
+    {
+        return currentDamage *= FindFirstObjectByType<PlayerStats>().currentStrength;
+    }
 }
