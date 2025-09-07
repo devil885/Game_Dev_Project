@@ -3912,10 +3912,19 @@ MonoBehaviour:
       enemyCount: 5
       spawnedCount: 0
       enemyPrefab: {fileID: 2564129859136073728, guid: 095324d40e4082742bb896d61877c6d5, type: 3}
+  - waveName: Wave 2
+    waveSize: 0
+    waveSpawnRate: 1
+    spawnedCount: 0
+    enemyGroups:
+    - enemyName: Bat
+      enemyCount: 5
+      spawnedCount: 0
+      enemyPrefab: {fileID: 2564129859136073728, guid: f3b15672bd7b0484f9c8b9aa988efd46, type: 3}
   currentWaveIndex: 0
-  waveInterval: 3
+  waveInterval: 5
   enemiesAlive: 0
-  maxEnemyCount: 4
+  maxEnemyCount: 3
   maxEnemiesReached: 0
   relativeSpawnPoints:
   - {fileID: 343746243}
