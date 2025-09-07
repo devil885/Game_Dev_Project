@@ -14,7 +14,7 @@ public class PlayerCollector : MonoBehaviour
 
     void Update() 
     {
-        playerCollector.radius = player.currentPickUpRange;
+        playerCollector.radius = player.CurrentPickUpRange;
     }
 
     void OnTriggerEnter2D(Collider2D collider) 

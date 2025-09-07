@@ -41,6 +41,11 @@ public class PlayerMovement : MonoBehaviour
 
     void InputManager() 
     {
+        if (GameManager.instance.isGameOver) 
+        {
+            return;
+        }
+
        moveDirection = playerControls.ReadValue<Vector2>();
 
         if (moveDirection.x != 0)
@@ -63,8 +68,12 @@ public class PlayerMovement : MonoBehaviour
 
     void Move() 
     {
+        if (GameManager.instance.isGameOver)
+        {
+            return;
+        }
         body.linearVelocity =
-         new Vector2(moveDirection.x * player.currentMoveSpeed, moveDirection.y * player.currentMoveSpeed);
+         new Vector2(moveDirection.x * player.CurrentMoveSpeed, moveDirection.y * player.CurrentMoveSpeed);
 
     }
 }

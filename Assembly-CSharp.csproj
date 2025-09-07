@@ -84,6 +84,7 @@
     <Compile Include="Assets\Scripts\Weapons\Weapon Behaviours\KnifeBehaviour.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyStats.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerAnimations.cs" />
+    <Compile Include="Assets\Scripts\Player\InputSystem_Actions.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerStats.cs" />
     <Compile Include="Assets\Scripts\PassiveItems\PassiveItemScriptableObject.cs" />
     <Compile Include="Assets\Scripts\Interfaces\CollectableInterface.cs" />
@@ -93,6 +94,7 @@
     <Compile Include="Assets\Scripts\Pick-Ups\ExperienceGem.cs" />
     <Compile Include="Assets\Scripts\Weapons\Weapon Controllers\KnifeController.cs" />
     <Compile Include="Assets\Scripts\Map\MapController.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Weapons\Weapon Controllers\GarlicController.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyScriptableObject.cs" />
   </ItemGroup>

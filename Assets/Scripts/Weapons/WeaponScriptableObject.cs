@@ -34,4 +34,12 @@ public class WeaponScriptableObject : ScriptableObject
     [SerializeField]
     Sprite icon;
     public Sprite Icon { get => icon; private set => icon = value; }
+
+    [SerializeField]
+    string name;
+    public string Name { get => name; private set => name = value; }
+
+    [SerializeField]
+    string description;
+    public string Description { get => description; private set => description = value; }
 }

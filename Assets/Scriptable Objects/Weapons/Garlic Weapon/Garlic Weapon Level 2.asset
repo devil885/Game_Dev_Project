@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8024dcc40ff502f43aa682c98a9f9fba, type: 3}
   m_Name: Garlic Weapon Level 2
   m_EditorClassIdentifier: 
-  prefab: {fileID: 6470447738664582412, guid: decd78a6c4872ea4185585a67e05797e, type: 3}
+  prefab: {fileID: 6470447738664582412, guid: b076f58b85ebce14588097fafdbee895, type: 3}
   damage: 5
   projectileSpeed: 0
   pierce: 0
   baseCooldown: 2.5
   level: 2
-  nextLevelPrefab: {fileID: 0}
+  nextLevelPrefab: {fileID: 1209497891753534105, guid: 4513cd7963993d747a7ec5341a073b4d, type: 3}
   icon: {fileID: 21300000, guid: e5adc68339e38ee4b83e9f4de812b9a9, type: 3}
+  name: Onion Level 2
+  description: Decreased Cooldown

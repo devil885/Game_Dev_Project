@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8024dcc40ff502f43aa682c98a9f9fba, type: 3}
-  m_Name: Knife Weapon Level 2
+  m_Name: Garlic Weapon Level 3
   m_EditorClassIdentifier: 
-  prefab: {fileID: 4325510088443535876, guid: f3ec745f6497cb2448577aa497f1e90f, type: 3}
-  damage: 5
-  projectileSpeed: 15
-  pierce: 1
-  baseCooldown: 2
-  level: 2
+  prefab: {fileID: 6470447738664582412, guid: 7449f0b736ddc4a47a0137151f5fd5e3, type: 3}
+  damage: 7
+  projectileSpeed: 0
+  pierce: 0
+  baseCooldown: 2.5
+  level: 3
   nextLevelPrefab: {fileID: 0}
-  icon: {fileID: 979429529, guid: 054255d18f1235246910686aa59ca843, type: 3}
-  name: Knife Level 2
-  description: Increased Projectile Speed
+  icon: {fileID: 21300000, guid: e5adc68339e38ee4b83e9f4de812b9a9, type: 3}
+  name: Onion Level 3
+  description: Increased damage

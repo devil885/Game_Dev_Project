@@ -16,3 +16,5 @@ MonoBehaviour:
   level: 2
   nextLevelPrefab: {fileID: 0}
   icon: {fileID: 21300000, guid: 96f5aef438d860b48a7655dd2d464cf1, type: 3}
+  name: Boots Level 2
+  description: More speed increase
