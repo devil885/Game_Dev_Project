@@ -78,6 +78,7 @@
     <Compile Include="Assets\Scripts\Enemy\EnemyMovement.cs" />
     <Compile Include="Assets\Scripts\Player\InventoryManager.cs" />
     <Compile Include="Assets\Scripts\BreakableProps.cs" />
+    <Compile Include="Assets\Scripts\Pick-Ups\BobbingAnimation.cs" />
     <Compile Include="Assets\Scripts\Map\Randomizer.cs" />
     <Compile Include="Assets\Scripts\CharacterSelector.cs" />
     <Compile Include="Assets\Scripts\DropRateManager.cs" />

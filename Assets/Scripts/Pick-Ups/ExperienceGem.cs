@@ -1,12 +1,16 @@
 using UnityEngine;
 
-public class ExperienceGem : PickUp, CollectableInterface
+public class ExperienceGem : PickUp
 {
     public int experienceAmount;
 
-    public void Collect() 
+    public override void Collect() 
     {
-        PlayerStats player = FindFirstObjectByType<PlayerStats>();
-        player.IncreaseExperience(experienceAmount);
+        if (!hasBeenCollected)
+        {
+            PlayerStats player = FindFirstObjectByType<PlayerStats>();
+            player.IncreaseExperience(experienceAmount);
+            base.Collect();
+        }
     }
 }

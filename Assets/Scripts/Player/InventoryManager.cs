@@ -39,7 +39,7 @@ public class InventoryManager : MonoBehaviour
     public List<WeaponUpgrade> weaponUpgradeOptions = new List<WeaponUpgrade>();
     public List<PassiveItemUpgrade> passiveItemUpgradeOptions = new List<PassiveItemUpgrade>();
     public List<UpgradeUI> upgradeUIOptions = new List<UpgradeUI>();
-
+    
     PlayerStats player;
 
     void Start() 
@@ -132,6 +132,8 @@ public class InventoryManager : MonoBehaviour
         {
             if (availableWeaponUpgrades.Count == 0 && availablePassiveItemUpgrades.Count == 0) 
             {
+                Debug.Log("We got in the if statement");
+                GameManager.instance.EndLevelUp();
                 return;
             }
 
