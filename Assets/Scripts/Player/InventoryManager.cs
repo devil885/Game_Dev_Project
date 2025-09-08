@@ -77,7 +77,7 @@ public class InventoryManager : MonoBehaviour
     public void LevelUpWeapon(int slotIndex, int upgradeIndex) 
     {
 
-        if(weaponSlots.Count > slotIndex) 
+        if(weaponSlots.Count > slotIndex && upgradeIndex < weaponUpgradeOptions.Count ) 
         {
             WeaponController weapon = weaponSlots[slotIndex];
 
@@ -133,19 +133,19 @@ public class InventoryManager : MonoBehaviour
         //{
         //   Debug.Log(x.weaponData.Name);
         //}
-        Debug.Log("available weapon upgrades before For: " + availableWeaponUpgrades.Count.ToString());
-        Debug.Log("availablePassiveItemUpgrades before For: " + availablePassiveItemUpgrades.Count.ToString());
+        //Debug.Log("available weapon upgrades before For: " + availableWeaponUpgrades.Count.ToString());
+       // Debug.Log("availablePassiveItemUpgrades before For: " + availablePassiveItemUpgrades.Count.ToString());
         foreach (var upgradeOption in upgradeUIOptions) 
         {
             if (availableWeaponUpgrades.Count == 0 && availablePassiveItemUpgrades.Count == 0) 
             {
-                Debug.Log("We got in the if statement");
-                Debug.Log("available weapon upgrades: " + availableWeaponUpgrades.Count.ToString());
-                Debug.Log("availablePassiveItemUpgrades: " + availablePassiveItemUpgrades.Count.ToString());
-                GameManager.instance.EndLevelUp();
+               // Debug.Log("We got in the if statement");
+               // Debug.Log("available weapon upgrades: " + availableWeaponUpgrades.Count.ToString());
+                //Debug.Log("availablePassiveItemUpgrades: " + availablePassiveItemUpgrades.Count.ToString());
+                //GameManager.instance.EndLevelUp();
                 return;
             }
-            Debug.Log("We got OUT the if statement");
+           // Debug.Log("We got OUT the if statement");
             int upgradeType;
 
             if (availableWeaponUpgrades.Count == 0)
@@ -163,12 +163,12 @@ public class InventoryManager : MonoBehaviour
 
             if (upgradeType == 1)// 1 = weaponUpgrade
             {
-                Debug.Log("available weapon upgrades In Upgrade type1: " + availableWeaponUpgrades.Count.ToString());
+               // Debug.Log("available weapon upgrades In Upgrade type1: " + availableWeaponUpgrades.Count.ToString());
                 WeaponUpgrade chosenWeaponUpgrade = availableWeaponUpgrades[UnityEngine.Random.Range(0, availableWeaponUpgrades.Count)];
-                availableWeaponUpgrades.Remove(chosenWeaponUpgrade);
 
                 if (chosenWeaponUpgrade != null)
                 {
+                    availableWeaponUpgrades.Remove(chosenWeaponUpgrade);
                     EnableUpgradeUI(upgradeOption);
                     bool newWeapon = false;
                     for (int i = 0; i < weaponSlots.Count; i++)
