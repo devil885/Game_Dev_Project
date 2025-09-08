@@ -8,8 +8,6 @@ public class PlayerStats : MonoBehaviour
 {
     InputSystemActions playerControls;
     CharacterScriptableObject characterData;
-    public GameObject firstPassiveItemTest, secondPassiveItemTest;
-    public GameObject secondWeaponTest;
 
     float currentHealth;
     float currentHealthRegen;
@@ -18,6 +16,7 @@ public class PlayerStats : MonoBehaviour
     float currentProjectileSpeed;
     float currentPickUpRange;
 
+    public ParticleSystem damageEffect;
     private void OnEnable()
     {
         playerControls.Enable();
@@ -176,10 +175,7 @@ public class PlayerStats : MonoBehaviour
         CurrentProjectileSpeed = characterData.ProjectileSpeed;
         CurrentPickUpRange = characterData.PickUpRange;
 
-        SpawnWeapon(characterData.StartingWeapon);
-        //SpawnWeapon(secondWeaponTest);
-        //SpawnPassiveItem(firstPassiveItemTest);
-        SpawnPassiveItem(secondPassiveItemTest);
+        SpawnWeapon(characterData.StartingWeapon); 
         playerControls = new InputSystemActions();
     }
 
@@ -262,6 +258,9 @@ public class PlayerStats : MonoBehaviour
         if (!isInvincible) 
         {
             CurrentHealth -= dmg;
+
+            if (damageEffect) Instantiate(damageEffect, transform.position, Quaternion.identity);
+
             invinciblityTimer = invincibilityDuration;
             isInvincible = true;
             if (CurrentHealth <= 0)

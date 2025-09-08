@@ -64,6 +64,8 @@
     <Compile Include="Assets\Scripts\Map\ChunkTrigger.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemySpawner.cs" />
     <Compile Include="Assets\Scripts\PassiveItems\PassiveItem.cs" />
+    <Compile Include="Assets\Scripts\Pick-Ups\Chest.cs" />
+    <Compile Include="Assets\Scripts\Weapons\WeaponEvolutionBlueprint.cs" />
     <Compile Include="Assets\Scripts\Weapons\Weapon Base\WeaponController.cs" />
     <Compile Include="Assets\Scripts\Player\CharacterScriptableObject.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerCollector.cs" />

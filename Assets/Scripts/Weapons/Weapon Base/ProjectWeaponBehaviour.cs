@@ -76,7 +76,7 @@ public class ProjectileWeaponBehaviour : MonoBehaviour
         if (collider.CompareTag("Enemy")) 
         {
             EnemyStats enemy = collider.GetComponent<EnemyStats>();
-            enemy.TakeDamage(GetCurrentDamage());
+            enemy.TakeDamage(GetCurrentDamage(), transform.position);
             ReducePierce();
         }
         else if (collider.CompareTag("Prop"))

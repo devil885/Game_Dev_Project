@@ -18,6 +18,6 @@ MonoBehaviour:
   maxHealth: 1000
   healthRegen: 1
   moveSpeed: 5
-  strength: 1
+  strength: 3
   projectileSpeed: 0
   pickUpRange: 1.6

@@ -47,6 +47,8 @@ public class GameManager : MonoBehaviour
     public Text stopwatchDisplay;
 
 
+
+
     public bool isGameOver = false;
     public bool isChoosingUpgrade = false;
 

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PickUp : MonoBehaviour, CollectableInterface
 {
-    protected bool hasBeenCollected = false;
+    public bool hasBeenCollected = false;
 
     public virtual void Collect() 
     {
